@@ -1,5 +1,30 @@
 #!/bin/bash
 
+# --- Bash 'readonly' ---
+# The 'readonly' command marks variables or functions as unmodifiable.
+readonly SCRIPT_VERSION="1.0"
+echo "Script Version: $SCRIPT_VERSION"
+
+# Uncommenting the next line would cause an error: "readonly variable"
+# SCRIPT_VERSION="2.0" 
+
+echo "-------------------------"
+
+# --- Bash 'shift' ---
+# 'shift' is used to parse command-line arguments by shifting the positional
+# parameters ($1, $2, $3...) to the left. $2 becomes $1, $3 becomes $2, etc.
+# $0 (the script name) is never shifted.
+
+echo "Total initial arguments: $#"
+if [ $# -gt 0 ]; then
+    echo "First argument before shift: $1"
+    shift
+    echo "First argument AFTER shift (was the 2nd argument): $1"
+    echo "Total arguments remaining: $#"
+fi
+
+echo "-------------------------"
+
 # --- Bash 'select' Loop (Interactive Menus) ---
 
 # The 'select' command provides an easy way to create numbered menus.
@@ -40,4 +65,4 @@ select opt in "${options[@]}"; do
     # unless a 'break' command was executed.
 done
 
-echo "Menu finished."
+echo "Script ($SCRIPT_VERSION) finished."

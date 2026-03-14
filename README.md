@@ -40,5 +40,8 @@ Demonstrates how to handle command-line arguments passed to your script.
 ### 8. `test_vs_if.sh` - Test vs If
 Highlights the differences and appropriate use cases for the `test` command (`[ ]`) and the `if` conditional construct in Bash scripting.
 
+### 9. `notification.sh` - Desktop Notifications
+Demonstrates how to send system/desktop notifications directly from a bash script using the `notify-send` command. Shows variations like custom icons, urgency levels, and timeouts.
+
 ---
 *Created as part of a personalized bash learning journey.*

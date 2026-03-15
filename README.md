@@ -43,5 +43,21 @@ Highlights the differences and appropriate use cases for the `test` command (`[ 
 ### 9. `notification.sh` - Desktop Notifications
 Demonstrates how to send system/desktop notifications directly from a bash script using the `notify-send` command. Shows variations like custom icons, urgency levels, and timeouts.
 
+### 10. `logger.sh` - System Logging
+Demonstrates how to use the `logger` command to send custom log messages to the system syslog.
+* **Topics covered:** Basic logging, adding tags and priority levels, piping output, specifying process IDs (PIDs), and creating custom logging functions.
+
+### 11. `debugger.sh` - Script Debugging
+Examples showcasing various built-in Bash debugging options and techniques.
+* **Topics covered:** `set -x` (print commands), `set -e` (exit on error), `set -u` (exit on undefined variables), debugging specific code blocks, and using `trap` on `ERR` signals.
+
+### 12. `ps4.sh` - Customizing the Debug Prompt
+Demonstrates how to alter the `PS4` environment variable to create more informative output when tracing script execution with `set -x`.
+* **Topics covered:** Including line numbers, file names, timestamps, execution depth (`SHLVL`, `BASH_SUBSHELL`), and terminal colors in debug traces.
+
+### 13. `sed.sh` - Stream Editor (Text Processing)
+Highlights the power of `sed` for filtering and transforming text, particularly for finding and replacing strings.
+* **Topics covered:** Basic and global substitution (`s///g`), in-place editing (`-i`), deleting lines, printing specific line ranges, using alternative delimiters, and executing multiple commands (`-e`).
+
 ---
 *Created as part of a personalized bash learning journey.*
